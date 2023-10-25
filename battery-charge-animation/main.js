@@ -8,17 +8,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
   navigator.getBattery().then(battery => {
 
-    // Update all the battery information which is a combination of multiple functions
     function updateAllBatteryInfo() {
       updateChargeInfo();
       updateLevelInfo();
       updateDischargingInfo();
     }
 
-    // Running as the promise returns battery
     updateAllBatteryInfo();
 
-    // Event Listener for when the charging status changes
     battery.addEventListener("chargingchange", updateAllBatteryInfo);
 
     // Event Listener for when the Battery Level Changes
