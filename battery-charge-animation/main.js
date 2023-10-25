@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     battery.addEventListener("dischargingtimechange", updateAllBatteryInfo);
 
-    // Updating the battery Level container and the charging bar width
     function updateLevelInfo() {
       const level = parseInt(battery.level * 100);
       batteryLevel.textContent = `${level}%`;
