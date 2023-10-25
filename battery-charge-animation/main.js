@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
 
-    // Updating the Discharging Information
     function updateDischargingInfo() {
       const dischargeTime = parseInt(battery.dischargingTime / 60) > 0;
       if (dischargeTime) {
