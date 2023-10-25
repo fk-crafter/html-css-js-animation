@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // All the containers we need to update the battery information
+
   const chargingIcon = document.querySelector(".charging_icon");
   const batteryLevel = document.querySelector(".battery_level");
   const chargingBar = document.querySelector(".charging_bar");
