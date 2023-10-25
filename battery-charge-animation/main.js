@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     battery.addEventListener("chargingchange", updateAllBatteryInfo);
 
-    // Event Listener for when the Battery Level Changes
     battery.addEventListener("levelchange", updateAllBatteryInfo);
 
     // Event Listener for when the discharging Time Change
